@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="ie=edge" http-equiv="X-UA-Compatible">
+		<title>Retrieve Grade</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<h1>Retrieve your grade</h1>
+
+		<form action="http://mumstudents.org/params.php">
+			<fieldset>
+				<legend>Input form</legend>
+				<div class="row">
+					<label for="name">Student name:</label>
+					<input type="text" name="name" id="name" required>
+				</div>
+				<div class="row">
+					<label for="studentID">Student ID:</label>
+					<input type="text" name="studentID" id="studentID" required>
+				</div>
+				<div class="row">
+					<label for="assignment">Assignment:</label>
+					<select name="assignment" id="assignment">
+						<option value="hw1" selected>Homework 1</option>
+						<option value="hw2">Homework 2</option>
+						<option value="hw3">Homework 3</option>
+					</select>
+				</div>
+				<div class="row">
+					<label>Entry:</label>
+					<label>
+						<input type="radio" name="entry" value="feb2019" checked>
+						Feb 2019
+					</label>
+					<label>
+						<input type="radio" name="entry" value="nov2018">
+						Nov 2018
+					</label>
+					<label>
+						<input type="radio" name="entry" value="may2018">
+						May 2018
+					</label>
+				</div>
+				<div class="row">
+					<div>
+						<label>
+							<input type="checkbox" name="term" required> Please confirm you are not lying and really are only looking up your own grade
+						</label>
+					</div>
+				</div>
+
+				<button type="reset">Clear</button>
+				<button type="submit">Get Grade!</button>
+			</fieldset>
+		</form>
+
+		<p class="validator">
+			<a href="http://validator.w3.org/check?uri=http://mgsh124.github.io/wap/labs/lab2/retrieve-grade.html" target="_blank">
+				<img src="../../images/w3c-html.png" alt="Valid HTML" />
+			</a>
+			<a href="http://jigsaw.w3.org/css-validator/validator?uri=http://mgsh124.github.io/wap/labs/lab2/retrieve-grade.html" target="_blank">
+				<img src="../../images/w3c-css.png" alt="Valid CSS" />
+			</a>
+		</p>
+
+	</body>
+</html>
