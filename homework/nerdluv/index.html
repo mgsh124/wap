@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NerdLuv</title>
+    <link href="images/heart.gif" type="image/gif" rel="shortcut icon" />
+    <link href="nerdluv.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <img src="images/nerdluv.png" alt="banner logo" /> <br />
+        where meek geeks meet
+    </header>
+
+    <div>
+        <form action="javascript:void(0)">
+            <fieldset>
+                <legend>New User Signup:</legend>
+                <div class="form-group">
+                    <label for="username">Name:</label>
+                    <input type="text" name="name" id="username" size="16">
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" checked>
+                        Female
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Age:</label>
+                    <input type="text" name="age" size="6" maxlength="2">
+                </div>
+
+                <div class="form-group">
+                    <label>Personality:</label>
+                    <input type="text" name="personality" size="6" maxlength="4">
+                    (<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp" target="_blank">Don't know your type?</a>)
+                </div>
+
+                <div class="form-group">
+                    <label for="favoriteOS">Favorite OS:</label>
+                    <select name="favoriteOS" id="favoriteOS">
+                        <option value="windows" selected>Windows</option>
+                        <option value="mac">Mac OS X</option>
+                        <option value="linux">Linux</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Seeking age:</label>
+                    <input type="text" name="minAge" size="6" maxlength="2" placeholder="min"> to <input type="text" name="maxAge" size="6" maxlength="2" placeholder="max">
+                </div>
+
+                <input type="submit" value="Sign Up">
+            </fieldset>
+        </form>
+    </div>
+
+    <p class="information">
+        This page is for single nerds to meet and date each other!  Type in your personal information and wait for the nerdly luv to begin!  Thank you for using our site.
+    </p>
+
+    <footer>
+        <hr />
+        <p>
+            Results and page (C) Copyright NerdLuv Inc.
+        </p>
+
+        <ul>
+            <li>
+                <a href="index.php">
+                    <img src="images/back.gif" alt="icon" />
+                    Back to front page
+                </a>
+            </li>
+        </ul>
+
+        <a href="http://validator.w3.org/check?uri=http://mgsh124.github.io/wap/homework/nerdluv/index.html" target="_blank">
+            <img src="../../images/w3c-html.png" alt="Valid HTML" />
+        </a>
+        <a href="http://validator.w3.org/check?uri=http://mgsh124.github.io/wap/homework/nerdluv/index.html" target="_blank">
+            <img src="../../images/w3c-css.png" alt="Valid CSS" />
+        </a>
+    </footer>
+
+</body>
+</html>
