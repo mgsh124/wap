@@ -1,0 +1,130 @@
+body {
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    background: url("../images/background.png");
+    margin: 0;
+}
+
+.header {
+    background: url("../images/bannerbg.png") repeat-x;
+    text-align: center;
+}
+
+.main-content {
+    width: 808px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24pt;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+    text-align: center;
+}
+
+.overview {
+    border: 4px solid gray;
+    border-radius: 20px;
+}
+
+.overview .top {
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+}
+
+.left-area {
+    width: 550px;
+}
+
+.right-area {
+    width: 250px;
+    float: right;
+}
+
+.top-bg {
+    background: url("../images/rbg.png");
+    color: red;
+    font-weight: bold;
+    font-size: 48pt;
+    height: 83px;
+}
+
+.top-bg img {
+    vertical-align: bottom;
+}
+
+.left-area .review {
+    overflow: hidden;
+}
+
+.left-area .review .column {
+    width: 46%;
+    float: left;
+    margin: 2%;
+}
+
+.review .column .box {
+    margin-bottom: 20pt;
+}
+
+.review .column .box .quote {
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.review .column .box .quote img {
+    float: left;
+    margin-right: 5px;
+}
+
+.review .column .box .person img {
+    float: left;
+    margin-right: 5px;
+}
+
+.right-area {
+    background-color: #A2B964;
+
+}
+
+.right-area .general {
+    padding: 10pt;
+    font-family: Arial, sans-serif;
+    font-size: 8pt;
+}
+
+.right-area .general dd {
+    margin-bottom: 10pt;
+}
+
+.right-area .general dt {
+    font-weight: bold;
+}
+
+.right-area .general dd ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.bottom {
+    background-color: #A2B964;
+    text-align: center;
+    border-radius: 0 0 16px 16px;
+}
+
+.bottom p {
+    padding: 5px 0;
+    margin: 0;
+}
+
+.validator {
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    opacity: 0.5;
+}
