@@ -3,11 +3,11 @@ function calcTip() {
     var tipElem = document.getElementById('tip');
     var totalElem = document.getElementById('total');
 
-    var subTotal = parseInt(subTotalElem.value);
-    var tip = parseInt(tipElem.value);
+    var subTotal = parseFloat(subTotalElem.value);
+    var tip = parseFloat(tipElem.value);
 
     if (!subTotal || !tip) return;
 
     var total = subTotal + (subTotal * tip / 100);
-    totalElem.innerHTML = '$' + total;
+    totalElem.innerHTML = '$' + total.toFixed(2);
 }
