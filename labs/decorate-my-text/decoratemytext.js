@@ -32,7 +32,7 @@ window.onload = function () {
             textAreaElem.style.fontWeight = "bold";
             textAreaElem.style.color = "green";
             textAreaElem.style.textDecoration = "underline";
-            bodyElem.style.backgroundImage = "url(http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg)";
+            bodyElem.style.backgroundImage = "url(hundred-dollar-bill.jpg)";
         }
     };
     
