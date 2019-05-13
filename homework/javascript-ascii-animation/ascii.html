@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS472: ASCII Animation Viewer</title>
+    <link rel="stylesheet" href="ascii.css">
+    <script src="animation.js"></script>
+    <script src="ascii.js"></script>
+</head>
+<body>
+<header>CSE 190 M ACSII Animation Viewer</header>
+<div class="center">
+    <textarea name="textarea" id="textarea" cols="80" rows="20"></textarea>
+</div>
+<div class="control-group">
+    <fieldset>
+        <legend>Play Controls:</legend>
+        <button id="start">Start</button>
+        <button id="stop" disabled>Stop</button>
+    </fieldset>
+    <fieldset>
+        <legend>Animation:</legend>
+        <select name="animation" id="animation">
+            <option value="blank">Blank</option>
+            <option value="exercise">Exercise</option>
+            <option value="juggler">Juggler</option>
+            <option value="bike">Bike</option>
+            <option value="dive">Dive</option>
+            <option value="custom">Custom</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Size:</legend>
+        <select name="size" id="size">
+            <option value="tiny">Tiny</option>
+            <option value="small">Small</option>
+            <option value="medium" selected>Medium</option>
+            <option value="large">Large</option>
+            <option value="xl">Extra Large</option>
+            <option value="xxl">XXL</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Speed:</legend>
+        <label for="speed">
+            <input type="checkbox" id="speed" name="speed"> Turbo
+        </label>
+    </fieldset>
+</div>
+<footer>
+    <div class="validator">
+        <a href="http://validator.w3.org/check?uri=https://mgsh124.github.io/wap/homework/javascript-ascii-animation/ascii.html" target="_blank">
+            <img alt="html validator"
+                 src="../../images/w3c-html.png"/>
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://mgsh124.github.io/wap/homework/javascript-ascii-animation/ascii.html" target="_blank">
+            <img src="../../images/w3c-css.png"
+                 alt="css validator">
+        </a>
+        <a href="https://webster.cs.washington.edu/jslint/?uri=https://mgsh124.github.io/wap/homework/javascript-ascii-animation/ascii.html" target="_blank">
+            <img src="../../images/w3c-js.png"
+                 alt="valid JS">
+        </a>
+    </div>
+</footer>
+</body>
+</html>
