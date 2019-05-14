@@ -1,4 +1,5 @@
 /* global ANIMATIONS, CUSTOM:true, EXERCISE, JUGGLER, BIKE, DIVE */
+/* jshint esversion: 6 */
 (function(){
     "use strict";
 
@@ -95,8 +96,9 @@
      * @returns {void}
      */
     function createCustomAnimation() {
-        CUSTOM = EXERCISE + "=====\n" + JUGGLER + "=====\n" + BIKE + "=====\n" + DIVE;
-        ANIMATIONS["Custom"] = ANIMATIONS["custom"] = ANIMATIONS["CUSTOM"] = CUSTOM;
+        CUSTOM = EXERCISE + "=====\n" + JUGGLER + "=====\n" +
+            BIKE + "=====\n" + DIVE;
+        ANIMATIONS.Custom = ANIMATIONS.custom = ANIMATIONS.CUSTOM = CUSTOM;
     }
 
     /** @description Animating the frames.
