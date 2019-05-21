@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WAP Online Dictionary</title>
+    <link href="css/dict.css" rel="stylesheet">
+</head>
+<body>
+    <h1>WAP Online Dictionary</h1>
+
+    <form>
+        <label for="term">Search Term</label>
+        <input id="term" name="term" type="text" autofocus>
+        <button id="lookup">Lookup</button>
+    </form>
+
+    <div id="results">
+        <p class="empty-state">There's nothing in here. Do you want to lookup some words?</p>
+    </div>
+
+    <div class="loading">
+        <img src="images/hourglass.svg" alt="Loading">
+    </div>
+
+    <div id="w3c">
+        <a href="https://webster.cs.washington.edu/validate-html.php" target="_blank">
+            <img alt="Valid HTML" src="https://webster.cs.washington.edu/w3c-html.png"/></a>
+        <a href="https://webster.cs.washington.edu/validate-css.php" target="_blank">
+            <img alt="Valid CSS" src="https://webster.cs.washington.edu/w3c-css.png"/></a>
+        <a href="https://webster.cs.washington.edu/jslint/?referer" target="_blank">
+            <img alt="Valid JS" src="https://webster.cs.washington.edu/w3c-js.png"/></a>
+    </div>
+
+    <script src="javascript/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <script src="javascript/dict.js"></script>
+
+    <script id="definition-template" type="text/x-handlebars-template">
+        {{#if defs}}
+            {{#each defs}}
+            <div class="definition">
+                <div>{{inc @index}}</div>
+                <div>{{#if wordType}} ({{wordType}}) {{else}} &nbsp; {{/if}}</div>
+                <div>{{definition}}</div>
+            </div>
+            {{/each}}
+        {{else}}
+            <h2>Sorry, no results were found.</h2>
+            <div>Suggestion:</div>
+            <ul>
+                <li>Please check your spelling</li>
+                <li>Try more general words</li>
+                <li>Try difference words that mean the same thing</li>
+            </ul>
+        {{/if}}
+    </script>
+</body>
+</html>
